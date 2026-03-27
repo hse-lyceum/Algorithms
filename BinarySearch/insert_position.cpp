@@ -17,6 +17,8 @@ using std::endl;
 using std::vector;
 
 int searchInsert(const vector<int>& v, int target) {
+
+    // Проверяем, придётся ли вставлять элемент за границы массива
     if (target < v[0]) {
         return 0;
     }
