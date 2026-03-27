@@ -32,6 +32,7 @@ int searchInsert(const vector<int>& v, int target) {
         if (v[mid] == target) {
             return mid;
         }
+        // Если находим позицию для элемента, возвращаем индекс позиции
         else if (target > v[mid] && target < v[mid + 1]) {
             return mid + 1;
         }
